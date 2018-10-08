@@ -33,8 +33,8 @@ public class TestngCase1 {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 	}
-	@Test
-	public void test001_login(){
+	@BeforeMethod
+	public void login(){
 		try {
 			testcase.login();
 			Assert.assertEquals(driver.getPageSource().contains("线内未拜访"), true,"----->登陆后未找到相应的字段");
@@ -60,9 +60,10 @@ public class TestngCase1 {
 		
 	}
 	@Test
-	public void test002_editStore(){
+	public void test001_editStore(){
 		try {
 			testcase.storeInfo();
+			Assert.assertEquals(driver.getPageSource().contains("门店信息"), true,"------>门店信息失败");
 		} catch (Exception e) {
 			File file=driver.getScreenshotAs(OutputType.FILE);
 			try {
@@ -84,9 +85,10 @@ public class TestngCase1 {
 		}
 	}
 	@Test
-	public void test003_prepare(){
+	public void test002_prepare(){
 		try {
 			testcase.preparation();
+			Assert.assertEquals(driver.getPageSource().contains("公事报备"), true,"----->公事报备失败！");
 		} catch (Exception e) {
 			File file=driver.getScreenshotAs(OutputType.FILE);
 			try {
@@ -108,8 +110,10 @@ public class TestngCase1 {
 		}
 	}
 	@AfterMethod
+	//包名：mengniu.net.winchannel.winsfa
+	//activity：mengniu.net.winchannel.winsfa.ui.login.LoginActivity
 	public void restart(){
-		AppiumUtils.startActivity(driver, appPackage, appActivity);
+		AppiumUtils.startActivity(driver, "mengniu.net.winchannel.winsfa", "mengniu.net.winchannel.winsfa.ui.login.LoginActivity");
 	}
 	
 }

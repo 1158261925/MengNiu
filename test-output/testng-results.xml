@@ -2,44 +2,28 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="196870" started-at="2018-08-22T03:34:19Z" finished-at="2018-08-22T03:37:36Z">
+  <suite name="Default suite" duration-ms="475042" started-at="2018-10-08T08:25:16Z" finished-at="2018-10-08T08:33:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="196870" started-at="2018-08-22T03:34:19Z" finished-at="2018-08-22T03:37:36Z">
-      <class name="net.wangxinli.testng.NewTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:net.wangxinli.testng.NewTest@7921b0a2]" name="init" is-config="true" duration-ms="75242" started-at="2018-08-22T11:34:19Z" finished-at="2018-08-22T11:35:34Z">
+    <test name="Default test" duration-ms="475042" started-at="2018-10-08T08:25:16Z" finished-at="2018-10-08T08:33:11Z">
+      <class name="net.wangxinli.testng.TestngCase1">
+        <test-method status="PASS" signature="init()[pri:0, instance:net.wangxinli.testng.TestngCase1@66d2e7d9]" name="init" is-config="true" duration-ms="77175" started-at="2018-10-08T16:25:16Z" finished-at="2018-10-08T16:26:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="login()[pri:0, instance:net.wangxinli.testng.NewTest@7921b0a2]" name="login" is-config="true" duration-ms="26007" started-at="2018-08-22T11:35:34Z" finished-at="2018-08-22T11:36:00Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:net.wangxinli.testng.TestngCase1@66d2e7d9]" name="login" is-config="true" duration-ms="31744" started-at="2018-10-08T16:26:33Z" finished-at="2018-10-08T16:27:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="test001_storeInfo()[pri:0, instance:net.wangxinli.testng.NewTest@7921b0a2]" name="test001_storeInfo" duration-ms="33032" started-at="2018-08-22T11:36:00Z" finished-at="2018-08-22T11:36:33Z">
+        <test-method status="FAIL" signature="test001_editStore()[pri:0, instance:net.wangxinli.testng.TestngCase1@66d2e7d9]" name="test001_editStore" duration-ms="230443" started-at="2018-10-08T16:27:05Z" finished-at="2018-10-08T16:30:56Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[storeInfofailure----->An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'WANGXINLI-PC', ip: '192.168.18.16', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_162'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=mengniu.net.winchannel.winsfa, noReset=true, deviceName=127.0.0.1:62001, platform=LINUX, deviceUDID=127.0.0.1:62001, desired={appPackage=mengniu.net.winchannel.winsfa, appActivity=mengniu.net.winchannel.winsfa.ui.login.LoginActivity, noReset=true, noSign=true, newCommandTimeout=1800, automationName=Appium, autoGrantPermissions=true, unicodeKeyboard=true, platformName=Android, udid=127.0.0.1:62001, deviceName=安卓设备, resetKeyboard=true}, newCommandTimeout=1800, platformVersion=4.4.2, webStorageEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, unicodeKeyboard=true, udid=127.0.0.1:62001, deviceManufacturer=samsung, platformName=LINUX, resetKeyboard=true, deviceScreenSize=720x1280, networkConnectionEnabled=true, noSign=true, warnings={}, databaseEnabled=false, appActivity=mengniu.net.winchannel.winsfa.ui.login.LoginActivity, locationContextEnabled=false, autoGrantPermissions=true, deviceModel=SM-G955F}]
-Session ID: 4e4db4b0-77b8-4519-a4e3-8354b9bfc391
-*** Element info: {Using=xpath, value=//*[@text='省：*']/following-sibling::*/*/*/*[3]}]]>
+              <![CDATA[编辑门店失败]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: storeInfofailure----->An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
-System info: host: 'WANGXINLI-PC', ip: '192.168.18.16', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_162'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=mengniu.net.winchannel.winsfa, noReset=true, deviceName=127.0.0.1:62001, platform=LINUX, deviceUDID=127.0.0.1:62001, desired={appPackage=mengniu.net.winchannel.winsfa, appActivity=mengniu.net.winchannel.winsfa.ui.login.LoginActivity, noReset=true, noSign=true, newCommandTimeout=1800, automationName=Appium, autoGrantPermissions=true, unicodeKeyboard=true, platformName=Android, udid=127.0.0.1:62001, deviceName=安卓设备, resetKeyboard=true}, newCommandTimeout=1800, platformVersion=4.4.2, webStorageEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, unicodeKeyboard=true, udid=127.0.0.1:62001, deviceManufacturer=samsung, platformName=LINUX, resetKeyboard=true, deviceScreenSize=720x1280, networkConnectionEnabled=true, noSign=true, warnings={}, databaseEnabled=false, appActivity=mengniu.net.winchannel.winsfa.ui.login.LoginActivity, locationContextEnabled=false, autoGrantPermissions=true, deviceModel=SM-G955F}]
-Session ID: 4e4db4b0-77b8-4519-a4e3-8354b9bfc391
-*** Element info: {Using=xpath, value=//*[@text='省：*']/following-sibling::*/*/*/*[3]}
+              <![CDATA[java.lang.AssertionError: 编辑门店失败
 	at org.testng.Assert.fail(Assert.java:94)
-	at net.wangxinli.testng.NewTest.test001_storeInfo(NewTest.java:89)
+	at net.wangxinli.testng.TestngCase1.test001_editStore(TestngCase1.java:75)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -70,28 +54,24 @@ Session ID: 4e4db4b0-77b8-4519-a4e3-8354b9bfc391
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test001_storeInfo -->
-        <test-method status="PASS" signature="backHome()[pri:0, instance:net.wangxinli.testng.NewTest@7921b0a2]" name="backHome" is-config="true" duration-ms="7234" started-at="2018-08-22T11:36:33Z" finished-at="2018-08-22T11:36:40Z">
+        </test-method> <!-- test001_editStore -->
+        <test-method status="PASS" signature="restart()[pri:0, instance:net.wangxinli.testng.TestngCase1@66d2e7d9]" name="restart" is-config="true" duration-ms="14568" started-at="2018-10-08T16:30:56Z" finished-at="2018-10-08T16:31:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- backHome -->
-        <test-method status="PASS" signature="login()[pri:0, instance:net.wangxinli.testng.NewTest@7921b0a2]" name="login" is-config="true" duration-ms="14717" started-at="2018-08-22T11:36:40Z" finished-at="2018-08-22T11:36:55Z">
+        </test-method> <!-- restart -->
+        <test-method status="PASS" signature="login()[pri:0, instance:net.wangxinli.testng.TestngCase1@66d2e7d9]" name="login" is-config="true" duration-ms="30442" started-at="2018-10-08T16:31:10Z" finished-at="2018-10-08T16:31:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="test002_preparation()[pri:0, instance:net.wangxinli.testng.NewTest@7921b0a2]" name="test002_preparation" duration-ms="30736" started-at="2018-08-22T11:36:55Z" finished-at="2018-08-22T11:37:26Z">
+        <test-method status="PASS" signature="test002_prepare()[pri:0, instance:net.wangxinli.testng.TestngCase1@66d2e7d9]" name="test002_prepare" duration-ms="77556" started-at="2018-10-08T16:31:41Z" finished-at="2018-10-08T16:32:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test002_preparation -->
-        <test-method status="PASS" signature="backHome()[pri:0, instance:net.wangxinli.testng.NewTest@7921b0a2]" name="backHome" is-config="true" duration-ms="7278" started-at="2018-08-22T11:37:26Z" finished-at="2018-08-22T11:37:33Z">
+        </test-method> <!-- test002_prepare -->
+        <test-method status="PASS" signature="restart()[pri:0, instance:net.wangxinli.testng.TestngCase1@66d2e7d9]" name="restart" is-config="true" duration-ms="12923" started-at="2018-10-08T16:32:58Z" finished-at="2018-10-08T16:33:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- backHome -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:net.wangxinli.testng.NewTest@7921b0a2]" name="quit" is-config="true" duration-ms="2597" started-at="2018-08-22T11:37:33Z" finished-at="2018-08-22T11:37:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- net.wangxinli.testng.NewTest -->
+        </test-method> <!-- restart -->
+      </class> <!-- net.wangxinli.testng.TestngCase1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

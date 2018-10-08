@@ -3,15 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="net.wangxinli.testng.NewTest">
+      <class name="net.wangxinli.testng.TestngCase1">
         <methods>
-          <include name="backHome"/>
+          <include name="test001_editStore"/>
           <include name="login"/>
-          <include name="test001_storeInfo"/>
+          <include name="restart"/>
           <include name="init"/>
-          <include name="quit"/>
         </methods>
-      </class> <!-- net.wangxinli.testng.NewTest -->
+      </class> <!-- net.wangxinli.testng.TestngCase1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
