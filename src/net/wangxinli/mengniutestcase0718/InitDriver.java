@@ -41,12 +41,13 @@ public class InitDriver {
 	 * @return
 	 * @throws Exception
 	 */
-	public static AndroidDriver<AndroidElement> initDriverWithInstall(String udid,String appPackage,String appAcitivity) throws Exception{
+	public static AndroidDriver<AndroidElement> initDriverWithInstall(String udid,String appPackage,String appAcitivity,String port) throws Exception{
 		DesiredCapabilities caps=InitDriver.getCommons(udid);
 		caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, appPackage);
 		caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,appAcitivity);
+		//caps.setCapability(AndroidMobileCapabilityType.SYSTEM_PORT, systemport);
 		caps.setCapability(MobileCapabilityType.NO_RESET, true);
-		AndroidDriver<AndroidElement> driver=new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
+		AndroidDriver<AndroidElement> driver=new AndroidDriver<>(new URL("http://127.0.0.1:"+port+"/wd/hub"), caps);
 		return driver;	
 	}
 	/**
@@ -58,11 +59,10 @@ public class InitDriver {
 	 * @return
 	 * @throws Exception
 	 */
-	public static AndroidDriver<AndroidElement> initDriverWithInstall(String udid,String appPackage,String appActivity,String appWaitActivity) throws Exception{
+	public static AndroidDriver<AndroidElement> initDriverWithInstall(String udid,String appPackage,String appActivity) throws Exception{
 		DesiredCapabilities caps=InitDriver.getCommons(udid);
 		caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, appPackage);
 		caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, appActivity);
-		caps.setCapability(AndroidMobileCapabilityType.APP_WAIT_ACTIVITY, appWaitActivity);
 		caps.setCapability(MobileCapabilityType.NO_RESET, true);
 		AndroidDriver<AndroidElement> driver=new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
 		return driver;

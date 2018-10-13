@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="tests">
+  <test name="Default test2(failed)" parallel="tests">
+    <parameter name="port" value="4726"/>
+    <parameter name="bport" value="2345"/>
+    <parameter name="udid" value="127.0.0.1:62027"/>
     <classes>
-      <class name="net.wangxinli.testng.TestngCase1">
+      <class name="net.wangxinli.testng.TestngCase2">
         <methods>
-          <include name="test001_editStore"/>
           <include name="login"/>
-          <include name="restart"/>
+          <include name="init"/>
           <include name="init"/>
         </methods>
-      </class> <!-- net.wangxinli.testng.TestngCase1 -->
+      </class> <!-- net.wangxinli.testng.TestngCase2 -->
     </classes>
-  </test> <!-- Default test(failed) -->
+  </test> <!-- Default test2(failed) -->
+  <test name="Default test1(failed)" parallel="tests">
+    <parameter name="port" value="4725"/>
+    <parameter name="bport" value="1234"/>
+    <parameter name="udid" value="127.0.0.1:62001"/>
+    <classes>
+      <class name="net.wangxinli.testng.TestngCase2">
+        <methods>
+          <include name="login"/>
+          <include name="init"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- net.wangxinli.testng.TestngCase2 -->
+    </classes>
+  </test> <!-- Default test1(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
